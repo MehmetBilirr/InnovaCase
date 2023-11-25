@@ -9,9 +9,10 @@ import UIKit
 import CoreLocation
 
 class MainViewController: UIViewController {
+  @IBOutlet weak var tableView: UITableView!
   let searchController = UISearchController()
   let locationManager = CLLocationManager()
-  @IBOutlet weak var tableView: UITableView!
+  var presenter: MainPresenterInterface?
   override func viewDidLoad() {
         super.viewDidLoad()
     locationManager.delegate = self
@@ -81,4 +82,12 @@ extension MainViewController:UISearchBarDelegate {
       }
     }
   }
+}
+
+extension MainViewController: MainViewInterface {
+  func reloadData() {
+    
+  }
+
+
 }
