@@ -14,6 +14,10 @@
 		F055FF232B1230770079BEE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F055FF212B1230770079BEE0 /* LaunchScreen.storyboard */; };
 		F055FF2C2B1231AD0079BEE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055FF2B2B1231AD0079BEE0 /* MainViewController.swift */; };
 		F055FF2F2B12323C0079BEE0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055FF2E2B12323C0079BEE0 /* WebService.swift */; };
+		F055FF322B1232840079BEE0 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055FF312B1232840079BEE0 /* Route.swift */; };
+		F055FF342B1232990079BEE0 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055FF332B1232990079BEE0 /* Method.swift */; };
+		F055FF362B1232AA0079BEE0 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055FF352B1232AA0079BEE0 /* AppError.swift */; };
+		F055FF382B1232BA0079BEE0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055FF372B1232BA0079BEE0 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		F055FF242B1230770079BEE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F055FF2B2B1231AD0079BEE0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F055FF2E2B12323C0079BEE0 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F055FF312B1232840079BEE0 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		F055FF332B1232990079BEE0 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		F055FF352B1232AA0079BEE0 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		F055FF372B1232BA0079BEE0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		F055FF152B1230710079BEE0 /* InnovaCase */ = {
 			isa = PBXGroup;
 			children = (
+				F055FF302B12327A0079BEE0 /* Helper */,
 				F055FF2D2B1232300079BEE0 /* Service */,
 				F055FF2A2B1231370079BEE0 /* Screens */,
 				F055FF162B1230710079BEE0 /* AppDelegate.swift */,
@@ -84,6 +93,17 @@
 				F055FF2E2B12323C0079BEE0 /* WebService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		F055FF302B12327A0079BEE0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F055FF312B1232840079BEE0 /* Route.swift */,
+				F055FF332B1232990079BEE0 /* Method.swift */,
+				F055FF352B1232AA0079BEE0 /* AppError.swift */,
+				F055FF372B1232BA0079BEE0 /* Constant.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +179,12 @@
 			files = (
 				F055FF2C2B1231AD0079BEE0 /* MainViewController.swift in Sources */,
 				F055FF172B1230710079BEE0 /* AppDelegate.swift in Sources */,
+				F055FF342B1232990079BEE0 /* Method.swift in Sources */,
+				F055FF382B1232BA0079BEE0 /* Constant.swift in Sources */,
 				F055FF2F2B12323C0079BEE0 /* WebService.swift in Sources */,
+				F055FF322B1232840079BEE0 /* Route.swift in Sources */,
 				F055FF192B1230710079BEE0 /* SceneDelegate.swift in Sources */,
+				F055FF362B1232AA0079BEE0 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
