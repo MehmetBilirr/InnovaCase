@@ -9,18 +9,15 @@ import UIKit
 
 extension UIViewController {
 
-    static var identifier: String {
-        return String(describing: self)
-    }
+  static var identifier: String {
+    return String(describing: self)
+  }
 
-    static func instantiate() -> Self {
-        let storyboard = UIStoryboard(name: "MainView", bundle: nil)
-
-        return storyboard.instantiateViewController(withIdentifier: identifier) as! Self
+  static func instantiate(name: StoryboardName) -> Self {
+    let storyboard = UIStoryboard(name: name.rawValue, bundle: nil)
+    return storyboard.instantiateViewController(withIdentifier: identifier) as! Self
+  }
 }
-
-}
-
 
 enum StoryboardName: String {
   case main = "MainView"

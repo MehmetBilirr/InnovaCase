@@ -8,10 +8,24 @@
 import Foundation
 
 extension Double {
-    var dateFormatted : String? {
+    func dateFormatted(format: DateFormat) -> String {
         let date = Date(timeIntervalSince1970: self)
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE,dd MMMM"
+        dateFormatter.dateFormat = format.rawValue
         return dateFormatter.string(from: date)
      }
+
+  func degreeString() -> String {
+    return String(self) + "°"
+  }
+
+  func percentSign() -> String {
+    return "%" + String(self)
+  }
+}
+
+enum DateFormat: String {
+  case full = "MMM d, h:mm a"
+  case hour = "HH:mm"
+
 }
