@@ -6,8 +6,8 @@
 //
 
 import Foundation
-extension UserDefaults {
 
+extension UserDefaults {
   func getCacheModels() -> WeatherResponse? {
     if let data = data(forKey: "Weathers") {
       do {

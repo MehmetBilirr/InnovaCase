@@ -50,11 +50,13 @@ extension MainViewController: CLLocationManagerDelegate {
     presenter?.getUserLocationWeather(location: Coord(lat: userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude), weatherUnit: weatherUnit)
   }
 
-  func locationManager(_ manager: CLLocationManager,
-                       didFailWithError error: Error) {
-    showAlert(message: "Konum paylaşmaya izin vermediniz. Şehrinizi aratabilirsiniz.")
-    presenter?.getSearchCityWeather(city: "Istanbul", weatherUnit: .celsius)
+  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+      if status == .denied {
+        showAlert(message: "You are not allowed to share location. You can search for your city.")
+        presenter?.getSearchCityWeather(city: "Istanbul", weatherUnit: .celsius)
+      }
   }
+
 }
 
 extension MainViewController:UITableViewDelegate,UITableViewDataSource {

@@ -9,6 +9,7 @@ import UIKit
 
 class WeatherTableViewCell: UITableViewCell {
 
+  @IBOutlet weak var feelLikeLbl: UILabel!
   @IBOutlet weak var dateLbl: UILabel!
   @IBOutlet weak var iconImage: UIImageView!
   @IBOutlet weak var minTempLbl: UILabel!
@@ -22,5 +23,6 @@ class WeatherTableViewCell: UITableViewCell {
     dateLbl.text = weather.dt.dateFormatted(format: .full)
     maxTempLbl.text = weather.main.tempMax.degreeString()
     minTempLbl.text = weather.main.tempMin.degreeString()
+    feelLikeLbl.text = weather.main.feelsLike.degreeString()
   }
 }

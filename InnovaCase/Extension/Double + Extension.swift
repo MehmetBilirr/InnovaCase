@@ -25,7 +25,7 @@ extension Double {
 }
 
 enum DateFormat: String {
-  case full = "MMM d, h:mm a"
+  case full = "MMM d, HH:mm"
   case hour = "HH:mm"
 
 }

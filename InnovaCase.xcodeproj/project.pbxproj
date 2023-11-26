@@ -114,16 +114,14 @@
 		F055FF152B1230710079BEE0 /* InnovaCase */ = {
 			isa = PBXGroup;
 			children = (
+				F0C5F7B42B13FDE200F50757 /* App */,
 				F055FF482B1233B60079BEE0 /* Extension */,
-				F055FF452B1233740079BEE0 /* Manager */,
 				F055FF392B1232F70079BEE0 /* Model */,
-				F055FF302B12327A0079BEE0 /* Helper */,
+				F055FF452B1233740079BEE0 /* Manager */,
 				F055FF2D2B1232300079BEE0 /* Service */,
 				F055FF2A2B1231370079BEE0 /* Screens */,
-				F055FF162B1230710079BEE0 /* AppDelegate.swift */,
-				F055FF182B1230710079BEE0 /* SceneDelegate.swift */,
-				F055FF1F2B1230770079BEE0 /* Assets.xcassets */,
-				F055FF212B1230770079BEE0 /* LaunchScreen.storyboard */,
+				F055FF302B12327A0079BEE0 /* Helper */,
+				F0C5F7B32B13FC3600F50757 /* Resources */,
 				F055FF242B1230770079BEE0 /* Info.plist */,
 			);
 			path = InnovaCase;
@@ -312,6 +310,24 @@
 				F0A836AB2B13C639001FF939 /* DetailView.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F0C5F7B32B13FC3600F50757 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F055FF212B1230770079BEE0 /* LaunchScreen.storyboard */,
+				F055FF1F2B1230770079BEE0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F0C5F7B42B13FDE200F50757 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F055FF182B1230710079BEE0 /* SceneDelegate.swift */,
+				F055FF162B1230710079BEE0 /* AppDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -15,7 +15,7 @@ class MainInteractor: MainInteractorInterface {
       switch result {
       case .success(let success):
         guard success.cod != "404" else {
-          self.presenter?.showAlert(message: "Aradığınız şehir bulunamadı.")
+          self.presenter?.showAlert(message: "City not found.")
           return
         }
         UserDefaults.standard.saveModeltoCache(success)
@@ -30,7 +30,7 @@ class MainInteractor: MainInteractorInterface {
     NetworkManager.shared.getCityWeather(city: city, unit: weatherUnit) { result in
       switch result {
       case .success(let success):
-        guard success.cod != "404" else { self.presenter?.showAlert(message: "Aradığınız şehir bulunamadı.")
+        guard success.cod != "404" else { self.presenter?.showAlert(message: "City not found.")
           return }
         UserDefaults.standard.saveModeltoCache(success)
         self.presenter?.didFetchWeather()

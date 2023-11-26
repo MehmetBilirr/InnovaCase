@@ -15,10 +15,10 @@ class MainPresenter: MainPresenterInterface {
       return UserDefaults.standard.getCacheModels()
   }
   func viewDidLoad() {
-    guard let weatherResponse = weatherResponse else {return}
     view?.configureTableView()
     view?.configureLocationManager()
     view?.configureSearchController()
+    guard let weatherResponse = weatherResponse else {return}
     view?.configureView(response: weatherResponse)
   }
 
